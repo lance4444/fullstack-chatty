@@ -69,7 +69,7 @@ const SignUpPage = () => {
                 <input
                   type="text"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="John Doe"
+                  placeholder="Enter your fullName please"
                   value={formData.fullName}
                   onChange={(e) =>
                     setFormData({ ...formData, fullName: e.target.value })
@@ -88,7 +88,7 @@ const SignUpPage = () => {
                 <input
                   type="email"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="John_Doe@example.com"
+                  placeholder="Enter your Email please"
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
@@ -107,7 +107,7 @@ const SignUpPage = () => {
                 <input
                   type={showPassword ? "text" : "password"}
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="******"
+                  placeholder="Enter your password please"
                   value={formData.password}
                   onChange={(e) =>
                     setFormData({ ...formData, password: e.target.value })
@@ -144,7 +144,7 @@ const SignUpPage = () => {
           </form>
           <div className="text-center">
             <p className="text-base-content/60">
-              Already have ana account? {""}
+              Already have an account? {""}
               <Link to="/login" className="link link-primary">
                 Sign in{" "}
               </Link>
